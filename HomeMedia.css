@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* max width 1000px =================  */
+@media(max-width:1000px){
+    .container{
+        width: 95%;
+        justify-content: space-around;
+         
+    }
+}
+
+
+/* max width 700px ========  */
+
+@media (max-width:700px){
+    .container{
+        margin: 5px auto;
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .viewContainer,.inputContainer{
+        margin: 10px 0;
+    }
+}
+
+/* max width 500px ==============  */
+@media(max-width:500px){
+    .inputContainer{
+        width: 100%;
+    }
+    .viewContainer{
+        width: 100%;
+    }
+    .itembox{
+        
+    }
+}
+
+/* max width 330 px ===  */
+@media(max-width:330px){
+    .itembox{
+        width: 250px;
+    }
+}

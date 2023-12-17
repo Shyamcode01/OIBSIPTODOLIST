@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+ 
+.head{
+    background-color: #118ECA;
+    width: 100%;
+    padding: 8px 5px;
+    overflow: hidden;
+     
+    z-index: 999;
+    
+}
+.text{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    animation:list 2s  alternate-reverse infinite;
+}
+@keyframes list{
+    from{
+        transform: translateX(5%);
+        color: #ED6E0B;
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+.task{
+    color: #29B6F6;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 25px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.task2{
+    color: #ED6E0B;
+}
+/* main  */
+.container{
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px 5px;
+    
+     display: flex;
+    justify-content: space-evenly; 
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    z-index: 8;
+     
+     
+}
+.container::before{
+    content: " ";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color:rgba(25, 25, 30, 0.1);
+    border-radius: 50%;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    animation: j2  alternate-reverse infinite 12s ;
+    pointer-events: none;
+}
+@keyframes j2{
+    0%{
+        transform: translatex(0px);
+    }
+    
+    10%{
+        transform: translatey(160px);
+    }
+    30%{
+        transform: translatex(260px);
+         
+        width: 80px;
+    }
+    50%{
+        transform: translatey(460px);
+        width: 60px;
+        height: 60px;
+    }
+    80%{
+        transform: translatex(660px);
+      
+    }
+    100%{
+        transform: translateX(960px);
+        height: 80px;
+    }
+}
+.inputContainer{
+    width: 350px;
+    margin: 0 10px;
+
+}
+.input{
+    width: 100%;
+    margin: 5px 0;
+    font-size: 18px;
+    padding: 5px;
+    background-color: #f7f7f7;
+    color: #212020;
+    
+    
+    
+}
+.inputvalue{
+    height: 45px;
+    
+}
+.input:focus{
+    background-color:#E0E0E0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+    
+}
+.smt{
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 22px;
+    border-radius: 5px;
+    border-color: #7EBE81;
+    text-align: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #7EBE81;
+    color:white;
+    transition: 0.3s ease;
+    
+}
+.smt:hover{
+    background-color: #489C4C;
+    cursor: pointer;
+}
+.viewContainer{
+    width: 450px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 5px;
+    
+}
+.boxItemContainer{
+    padding: 10px;
+    padding-top: 0;
+    width: 100%;
+    height: 380px;
+    overflow: auto;
+}
+.top1{
+    width: 100%;
+    background-color: #29B6F6;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 18px;
+    margin: 5px 0;
+}
+.itembox{
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 10px 0;
+    border-radius: 5px;
+    
+}
+.decitem{
+    width: 60%;
+    font-size: 15px;
+    text-align: center;
+}
+.text12{
+    text-decoration: line-through;
+    cursor: pointer;
+}
+.closeitem{
+    background-color: rgba(255, 0, 0, 0.767);
+    padding: 5px 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.closeitem:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.closeitem:active{
+    transform: translateY(1px);
+    user-select: none;
+}
+
+
+
+/* footer  */
+.foot{
+    width: 100%;
+    background-color: #374046;
+    padding: 25px 10px;
+}
+.listf{
+    color: #29B6F6;
+    font-size: 25px;
+}
+.listf1{
+    color: #ED6E0B;
+}
+.contact{
+    color: #E0E0E0;
+    font-size: 15px;
+}
+.contact h3{
+    margin: 5px 0;
+    padding: 2px;
+}
+.copy{
+    color: #ABABAB;
+    font-size: 18px;
+    text-align: center;
+}
+.shy{
+    color: #E0E0E0;
+}
